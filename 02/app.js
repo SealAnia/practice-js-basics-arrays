@@ -21,3 +21,17 @@ function createRandomArray() {
 function getRandomInteger(min, max) {
     return Math.round(Math.random() * (max-min) + min);
 }
+
+console.log('TURA Z FOR');
+
+for(let i = 0; i < randomArray.length; i++) {
+    console.log(randomArray[i]);
+}
+
+console.log('TURA Z FOR EACH');
+
+randomArray.forEach(function(element, index, array) {
+    console.log(element);
+});
+
+console.log('The last index is ' + randomArray[randomArray.length - 1]);
